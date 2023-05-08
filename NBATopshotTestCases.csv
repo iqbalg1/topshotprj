@@ -1,0 +1,23 @@
+Test Case,Steps,Expected Result,Actual Result,Automated (Y/N),Notes
+Load Home Page,Open www.nbatopshot.com,"The following should be visible:
+-Navigation Bar
+-Welcome banner & video
+-4 Moments Visible w/ Start Your Collection Link
+-3 Pack Visible w/ Buy a Pack link",,,
+,,,,,
+Search for a Given Player (Explicit),"-Open www.nbatopshot.com/marketplace
+-Enter a player name
+-Press enter","-The search bar should have the player name
+-12 moments should be visible
+-Click random moment, confirm it loads",,,
+Search for a Given Player (Partial),"-Open www.nbatopshot.com/marketplace
+-Enter a partial player name
+-Navigate to name and click","-The search bar should have the player name
+-12 moments should be visible
+-Click random moment, confirm it loads",,,
+Confirm that moment previews load on all pages,"-Open www.nbatopshot.com, hover over a moment
+-Search for a player, hover over a moment
+-Open a moment, ensure moment auto plays",The moment should play in the preview window,,,
+View Moment Details,"-Open a moment page
+-Collapse and expand the Details, Stats, Offers and History tabs
+",,,,
