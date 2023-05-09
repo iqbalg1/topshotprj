@@ -7,6 +7,7 @@ class TestMarketplace:
     def setup_pageobjects(self, create_marketplacepageobj):
         self.marketplace_page = create_marketplacepageobj
 
+    #expected to fail because of missing graphql response, see readme
     def test_search_dropdown_list_loads(self):
         self.marketplace_page.select_search_bar()
         default_search_results = self.marketplace_page.get_search_dropdown_results()
@@ -16,6 +17,7 @@ class TestMarketplace:
 
         assert default_search_results.text == api_player_results[0]
 
+    #expected to fail because of missing graphql response, see readme
     def test_search_specific_player(self):
         self.marketplace_page.type_search_bar('Lebron')
         search_results = self.marketplace_page.get_search_dropdown_results()
@@ -27,5 +29,5 @@ class TestMarketplace:
 
         search_url = self.marketplace_page.get_current_url()
         #should verify search results instead of url but not getting any results
-        #see email for screenshot/bug report
+        #see readme for screenshot/bug report
         assert search_url == 'https://nbatopshot.com/search?byPlayers=2544'
